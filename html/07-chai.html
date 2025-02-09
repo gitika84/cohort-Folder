@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+       body{
+        
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+       }
+       form{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+        height: 200px;
+        border-radius: 3px;
+        padding: 20px;
+       }
+       #textre{
+        margin-top: 20px;
+       }
+       #pass{
+        margin-top: 20px;
+       }
+       #sub{
+        margin-top: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h4 >Form Registration</h4>
+        <form>
+            <label for="Number">Number :</label>
+            <input type="number" name="Number">
+            
+            <textarea id="textre" rows="5" required readonly cols="30" placeholder="For comment"></textarea>
+    
+            
+            <label id="pass" for="Password">Password :</label>
+            <input type="password" pattern=".{8,}" required title="8 characters minimum">
+    
+            <button id="sub" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
